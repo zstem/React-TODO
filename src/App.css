@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(0, 0, 28);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.todo {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+
+.todos {
   color: white;
+  cursor: pointer;
+  display: grid;
+  font-size: 1.5rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.head button {
+  color: white;
+  background-color: #1180FF;
+  margin: 0px 10px 10px 10px;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-bottom: 4px solid #1054a2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.classText {
+  font-size: 1rem;
+  font-weight: bold;
 }
+
+.head button:hover {
+  border-bottom: 5px solid #1054a2;
+  cursor: pointer;
+}
+
+.btn{
+  margin-right: 10px;
+}
+
+.buttons{
+  float: right;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+
+.li-blue {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #1180FF;
+  border-bottom: 4px solid #1054a2;
+}
+.li-blue:hover{
+  border-bottom: 5px solid #1054a2;
+}
+.li-pink {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #ff11f7;
+  border-bottom: 4px solid #c70dc1;
+}
+
+.li-pink:hover{
+  border-bottom: 5px solid #c70dc1;
+}
+.li-yellow {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #ffee00;
+  border-bottom: 4px solid #cdbf00;
+}
+.li-yellow:hover{
+  border-bottom: 5px solid #c4d600;
+}
+.li-green {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #00ff0d;
+  border-bottom: 4px solid #00ca0a;
+}
+.li-green:hover{
+  border-bottom: 5px solid #00ca0a;
+}
+.li-orange {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #ffa600;
+  border-bottom: 4px solid #ce8600;
+}
+.li-orange:hover{
+  border-bottom: 5px solid #ce8600;
+}
+.li-red {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #ff0000;
+  border-bottom: 4px solid #cd0000;
+}
+.li-red:hover{
+  border-bottom: 5px solid #cd0000;
+}
+.li-purple {
+  
+  list-style-type: none;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: #c300ff;
+  border-bottom: 4px solid #8f00ba;
+}
+.li-purple:hover{
+  border-bottom: 5px solid #8f00ba;
+}
+.listText{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: #aad2ff;
+  margin-left: 20px;
+}
+
+
+.todoField{
+  padding-left: 10px;
+  font-size: 30px;
+  height: 3rem;
+  width: 30rem;
+  border: 0;
+  border-radius: 0.75rem;
+  border-bottom: 4px solid #1054a2;
+  background-color: #1180FF;
+  color: white;
+  
+}
+
+.todoClassField{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  height: 3rem;
+  width: 14rem;
+  border: 0;
+  border-radius: 0.75rem;
+  border-bottom: 4px solid #1054a2;
+  background-color: rgba(0, 0, 0, 1000);
+  color: white;
+  
+}
+
+input:focus{
+  outline: none;
+  border-width: 4px;
+  
+}
+input:hover{
+  border-width: 5px;
+}
+
